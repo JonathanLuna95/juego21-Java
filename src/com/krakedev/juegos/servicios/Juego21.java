@@ -111,5 +111,12 @@ public class Juego21 {
 
 	    return ganadores;
 	}
+	
+	public void reiniciarJugadores() {
+	    for (Jugador jugador : jugadores) {
+	        jugador.setPuntajeCartas(0);
+	        jugador.getCartas().clear();
+	    }
+	}
 
 }
