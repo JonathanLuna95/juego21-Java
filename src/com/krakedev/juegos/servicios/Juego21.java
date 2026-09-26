@@ -10,6 +10,9 @@ public class Juego21 {
 	private ArrayList<Jugador> jugadores;
 	private Dealer dealer;
 	
+	public Juego21() {
+	    jugadores = new ArrayList<Jugador>();
+	}
 	
 	public ArrayList<Jugador> getJugadores() {
 		return jugadores;
@@ -28,12 +31,12 @@ public class Juego21 {
 		for(Carta carta : dealer.getNaipe()) {
 			switch (carta.getValor()) {
 			case "A" :
-				carta.getValorJuego(11);
+				carta.setValorJuego(11);
 				break;
 			case "J" :
 			case "Q" :
 			case "K" :
-				carta.setValor10);
+				carta.setValorJuego(10);
 				break;
 			default :
 				int x = Integer.parseInt(carta.getValor());

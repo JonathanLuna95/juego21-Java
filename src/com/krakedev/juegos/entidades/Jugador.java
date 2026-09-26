@@ -7,8 +7,8 @@ public class Jugador {
 	private String nickname;
 	private ArrayList<Carta> cartas = new ArrayList<Carta>();
 	
-	public Jugador() {
-		this.nickname = nickname;
+	public Jugador(String nickname) {
+	    this.nickname = nickname;
 	}
 	
 
